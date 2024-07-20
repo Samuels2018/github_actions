@@ -3,12 +3,16 @@ name: Triggers
 run-name: ¡Estoy aprendiendo a usar diferentes Triggers!
 on:
   push:
+    # especifica las ramas en las que se ejecutará el flujo de trabajo 
     branches:
       - master
+  # se ejecuta cuando se abre un PR, se sincroniza o se reabre
   pull_request:
     types: [opened, synchronize, reopened]
+    # todos los archivos que terminen en .py
     paths:
       - '**.py'
+  # se ejecuta cuando se etiqueta un issue
   issues:
     types:
       - labeled
