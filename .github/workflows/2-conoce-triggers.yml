@@ -60,7 +60,7 @@ jobs:
       - name: Verificar contenido del nuevo workflow
         run: ./.github/script/check-file.sh
         env:
-          FILE: ".github/workflows/triggers.yml"
+          FILE: ".github/workflows/_01_triggers.yml"
           SEARCH: "name:"
 
       # Update README to close <details id=2> and open <details id=3>

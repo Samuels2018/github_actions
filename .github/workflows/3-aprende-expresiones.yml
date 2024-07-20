@@ -60,7 +60,7 @@ jobs:
       - name: Verificar contenido del nuevo workflow
         run: ./.github/script/check-file.sh
         env:
-          FILE: ".github/workflows/expresiones.yml"
+          FILE: ".github/workflows/_02_expresiones.yml"
           SEARCH: "name:"
 
       # Update README to close <details id=3> and open <details id=4>

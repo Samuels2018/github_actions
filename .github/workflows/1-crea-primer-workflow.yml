@@ -60,7 +60,7 @@ jobs:
       - name: Verificar contenido del nuevo workflow
         run: ./.github/script/check-file.sh
         env:
-          FILE: ".github/workflows/hola-mundo.yml"
+          FILE: ".github/workflows/_00_hola-mundo.yml"
           SEARCH: "name:"
 
       # Update README to close <details id=1> and open <details id=2>

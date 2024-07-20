@@ -60,7 +60,7 @@ jobs:
       - name: Verificar contenido del nuevo workflow
         run: ./.github/script/check-file.sh
         env:
-          FILE: ".github/workflows/variables.yml"
+          FILE: ".github/workflows/_04_variables.yml"
           SEARCH: "name:"
 
       # Update README to close <details id=5> and open <details id=X>
